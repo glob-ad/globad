@@ -1,0 +1,691 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Globad</title>
+    <meta name="description" content="About">
+    <meta name="keywords" content="About">
+
+    <!-- Core CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap">
+    <link rel="stylesheet" href="./About-Yeahmobi_files/css.css">
+    <link rel="stylesheet" href="./About-Yeahmobi_files/ny.css">
+    <link rel="stylesheet" href="./About-Yeahmobi_files/animate.css">
+    <link rel="stylesheet" href="./About-Yeahmobi_files/swiper.min.css">
+    <link rel="stylesheet" href="./About-Yeahmobi_files/layer.css">
+    <link rel="stylesheet" href="./About-Yeahmobi_files/pop.css">
+    <link rel="stylesheet" href="./About-Yeahmobi_files/select2.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Core JS -->
+    <script src="./About-Yeahmobi_files/jquery.min.js"></script>
+    <script src="./About-Yeahmobi_files/ie.js"></script>
+    <script src="./About-Yeahmobi_files/wow.min.js"></script>
+    <script src="./About-Yeahmobi_files/swiper.min.js"></script>
+    <script src="./About-Yeahmobi_files/rellax.js"></script>
+</head>
+<body>
+
+<!-- ===== Popup / Form scripts ===== -->
+<link rel="stylesheet" href="./About-Yeahmobi_files/pop.css">
+<script src="./About-Yeahmobi_files/layer.js"></script>
+<script src="./About-Yeahmobi_files/jquery.validate.js"></script>
+<script src="./About-Yeahmobi_files/jquery.addvalidate.js"></script>
+<script src="./About-Yeahmobi_files/mousewheel.min.js"></script>
+<script src="./About-Yeahmobi_files/select2.min.js"></script>
+
+<script>var IS_SCROLL_SHOW = true;</script>
+
+<!-- ===== Desktop Header ===== -->
+<div class="header on-opacity fixedNav gizle sabit">
+    <div class="center">
+        <ul class="nav">
+            <li class="m on">
+                <a href="/" target="_self" title="About" class="wow rotateInUpLeft" data-en="About" data-zh="关于我们" data-wow-duration="1.5s">About</a>
+            </li>
+            <li class="m navon ons">
+                <a href="javascript:void(0);" title="Services" class="wow rotateInUpLeft" data-en="Services" data-zh="服务" data-wow-duration="1.6s">Services</a>
+                <ul class="nav_list" style="display:none;">
+                    <li><a href="service-local-media.html" target="_self" data-en="Local Media Marketing" data-zh="本地媒体营销">Local Media Marketing</a></li>
+                    <li><a href="service-influencer.html" target="_self" data-en="Influencer Marketing" data-zh="网红营销">Influencer Marketing</a></li>
+                    <li><a href="service-programmatic.html" target="_self" data-en="Programmatic Advertising" data-zh="程序化广告">Programmatic Advertising</a></li>
+                    <li><a href="service-integrate.html" target="_self" data-en="Integrate Marketing" data-zh="整合营销">Integrate Marketing</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="logo wow fadeInDown" data-wow-duration="1s">
+            <!-- Replace with your own logo -->
+            <a href="/" title="logo"><img src="logo.png" alt="Logo"></a>
+        </div>
+        <div class="navright">
+            <a href="mailto:Admin@globad.net" target="_blank" title="Email" class="wow rotateInUpLeft" data-wow-duration="1.5s">
+                <img src="./About-Yeahmobi_files/6454a94ec8e00.png" alt="Email"> <span data-en="Email" data-zh="邮箱">Email</span>
+            </a>
+            <a class="talk customTalk wow rotateInUpLeft" data-wow-duration="1.6s" data-en="Let's talk!" data-zh="联系我们">Let's talk!</a>
+            <button id="lang-toggle">中文</button>
+        </div>
+    </div>
+</div>
+
+<!-- ===== Mobile Header ===== -->
+<div class="wap_header fixedNav">
+    <div class="center">
+        <a href="mailto:Admin@globad.net" target="_blank" class="lin" data-en="Email" data-zh="邮箱">Email</a>
+        <div class="logo">
+            <a href="/">
+                <img class="logo1" src="logo.png" alt="">
+                <img class="logo2" src="logo.png" alt="">
+            </a>
+        </div>
+        <div class="wap-right">
+            <button id="lang-toggle-mobile">中文</button>
+            <div class="menu" data-en="Menu" data-zh="菜单">Menu</div>
+        </div>
+    </div>
+</div>
+<div class="wap_menulist">
+    <div class="center">
+        <div class="logo"><a href="/"><img src="logo.png" alt=""></a></div>
+        <div class="wap_close">Close</div>
+        <div class="clear"></div>
+        <div class="menulist">
+            <ul class="wap_nav">
+                <li class="mm wow fadeInDown" data-wow-duration=".8s" data-wow-delay="0.1s"><a href="/" data-en="About" data-zh="关于我们">About</a></li>
+                <li class="mm wow fadeInDown" data-wow-duration=".8s" data-wow-delay="0.2s">
+                    <a href="javascript:void(0);" data-en="Services" data-zh="服务">Services</a>
+                    <ul class="wap_navlist">
+                        <li><a href="service-local-media.html" data-en="Local Media Marketing" data-zh="本地媒体营销">Local Media Marketing</a></li>
+                        <li><a href="service-influencer.html" data-en="Influencer Marketing" data-zh="网红营销">Influencer Marketing</a></li>
+                        <li><a href="service-programmatic.html" data-en="Programmatic Advertising" data-zh="程序化广告">Programmatic Advertising</a></li>
+                        <li><a href="service-integrate.html" data-en="Integrate Marketing" data-zh="整合营销">Integrate Marketing</a></li>
+                    </ul>
+                    <i class="anniu"></i>
+                </li>
+            </ul>
+        </div>
+        <!-- Scrolling marquee in mobile menu -->
+        <div class="picMarquee-left">
+            <div class="bd">
+                <ul>
+                    <li>let's talk! &nbsp;let's talk! &nbsp;let's talk! &nbsp;</li>
+                    <li>let's talk! &nbsp;let's talk! &nbsp;let's talk! &nbsp;</li>
+                    <li>let's talk! &nbsp;let's talk! &nbsp;let's talk! &nbsp;</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== Talk / Contact Popup ===== -->
+<div class="talk_pop on-opacity">
+    <div class="bai"></div>
+    <div class="pop_center">
+        <div class="logo">
+            <a href="/" title="logo"><img src="logo.png" alt=""></a>
+        </div>
+        <div class="close">close</div>
+    </div>
+    <div class="clear"></div>
+    <div class="box center">
+        <h3 data-en="We will get back to you asap!" data-zh="我们会尽快回复您！">We will get back to you asap!</h3>
+        <div class="slideTxtBox">
+            <div class="hd">
+                <ul>
+                    <li data-id="411" data-index="1" class="Advertiser_411" onclick="track(3)"><span data-en="Advertiser" data-zh="广告主">Advertiser</span></li>
+                    <li data-id="413" data-index="2" class="Advertiser_413" onclick="track(4)"><span data-en="Media partner" data-zh="媒体合作伙伴">Media partner</span></li>
+                    <li data-id="412" data-index="3" class="Advertiser_412" onclick="track(5)"><span data-en="Influencer" data-zh="网红/达人">Influencer</span></li>
+                </ul>
+            </div>
+            <div class="bd">
+                <!-- Advertiser Form -->
+                <form id="form_do_1" name="form_do_1" method="post" novalidate>
+                    <input type="hidden" name="tag_id" value="411">
+                    <div class="pic"><img alt="Advertiser" src="./About-Yeahmobi_files/411_448_667_0.jpeg"></div>
+                    <div class="form_box">
+                        <div class="input_box"><p data-en="* Full name" data-zh="* 姓名">* Full name</p><input type="text" name="name" autocomplete="off" placeholder="Please enter" data-ph-en="Please enter" data-ph-zh="请输入" required></div>
+                        <div class="input_box">
+                            <p data-en="* Country" data-zh="* 国家/地区">* Country</p>
+                            <select class="select99" name="text_1" required>
+                                <option value="" data-en="Please select" data-zh="请选择">Please select</option>
+                                <option value="Afghanistan">Afghanistan</option><option value="Albania">Albania</option><option value="Algeria">Algeria</option><option value="Argentina">Argentina</option><option value="Australia">Australia</option><option value="Austria">Austria</option><option value="Bangladesh">Bangladesh</option><option value="Belgium">Belgium</option><option value="Brazil">Brazil</option><option value="Canada">Canada</option><option value="Chile">Chile</option><option value="China">China</option><option value="Colombia">Colombia</option><option value="Czech Republic">Czech Republic</option><option value="Denmark">Denmark</option><option value="Egypt">Egypt</option><option value="Ethiopia">Ethiopia</option><option value="Finland">Finland</option><option value="France">France</option><option value="Germany">Germany</option><option value="Ghana">Ghana</option><option value="Greece">Greece</option><option value="Hong Kong">Hong Kong</option><option value="Hungary">Hungary</option><option value="India">India</option><option value="Indonesia">Indonesia</option><option value="Iran">Iran</option><option value="Iraq">Iraq</option><option value="Ireland">Ireland</option><option value="Israel">Israel</option><option value="Italy">Italy</option><option value="Japan">Japan</option><option value="Jordan">Jordan</option><option value="Kenya">Kenya</option><option value="Korea">Korea</option><option value="Kuwait">Kuwait</option><option value="Malaysia">Malaysia</option><option value="Mexico">Mexico</option><option value="Morocco">Morocco</option><option value="Myanmar">Myanmar</option><option value="Nepal">Nepal</option><option value="Netherlands">Netherlands</option><option value="New Zealand">New Zealand</option><option value="Nigeria">Nigeria</option><option value="Norway">Norway</option><option value="Oman">Oman</option><option value="Pakistan">Pakistan</option><option value="Philippines">Philippines</option><option value="Poland">Poland</option><option value="Portugal">Portugal</option><option value="Qatar">Qatar</option><option value="Romania">Romania</option><option value="Russian Federation">Russian Federation</option><option value="Saudi Arabia">Saudi Arabia</option><option value="Singapore">Singapore</option><option value="South Africa">South Africa</option><option value="Spain">Spain</option><option value="Sri Lanka">Sri Lanka</option><option value="Sweden">Sweden</option><option value="Switzerland">Switzerland</option><option value="Taiwan">Taiwan</option><option value="Thailand">Thailand</option><option value="Turkey">Turkey</option><option value="Ukraine">Ukraine</option><option value="United Arab Emirates">United Arab Emirates</option><option value="United Kingdom">United Kingdom</option><option value="United States of America">United States of America</option><option value="Vietnam">Vietnam</option>
+                            </select>
+                        </div>
+                        <div class="input_box"><p data-en="* Company name" data-zh="* 公司名称">* Company name</p><input type="text" name="text_2" autocomplete="off" placeholder="Please enter" data-ph-en="Please enter" data-ph-zh="请输入" required></div>
+                        <div class="input_box">
+                            <p data-en="* Company Type" data-zh="* 公司类型">* Company Type</p>
+                            <select class="select1" name="text_3" required>
+                                <option value="" data-en="Please select" data-zh="请选择">Please select</option>
+                                <option value="Developer">Developer</option>
+                                <option value="Advertiser">Advertiser</option>
+                                <option value="Agency">Agency</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="input_box"><p data-en="* Email" data-zh="* 邮箱">* Email</p><input type="email" name="email" autocomplete="off" placeholder="Example@yourdomain.com" data-ph-en="Example@yourdomain.com" data-ph-zh="示例@您的域名.com" required></div>
+                        <div class="input_box"><p data-en="* Phone / Wechat ID / Skype" data-zh="* 电话 / 微信 / Skype">* Phone / Wechat ID / Skype</p><input type="text" name="text_4" autocomplete="off" placeholder="Please enter" data-ph-en="Please enter" data-ph-zh="请输入" required></div>
+                        <div class="input_box">
+                            <p data-en="* I am interested in" data-zh="* 我感兴趣的是">* I am interested in</p>
+                            <select class="select select_2" name="text_5[]" multiple required>
+                                <option value="Mobile app monetization" data-en="Mobile app monetization" data-zh="移动应用变现">Mobile app monetization</option>
+                                <option value="User acquisition" data-en="User acquisition" data-zh="用户获取">User acquisition</option>
+                                <option value="Ad Exchange integration" data-en="Ad Exchange integration" data-zh="广告交易平台整合">Ad Exchange integration</option>
+                            </select>
+                        </div>
+                        <div class="input_box">
+                            <p data-en="How did you hear about us?" data-zh="您是如何了解我们的？">How did you hear about us?</p>
+                            <select class="select1" name="text_6">
+                                <option value="" data-en="Please select" data-zh="请选择">Please select</option>
+                                <option value="Sales&Consultants">Sales &amp; Consultants</option>
+                                <option value="Events&Expo">Events &amp; Expo</option>
+                                <option value="Social Media">Social Media</option>
+                                <option value="News">News</option>
+                                <option value="Search engine">Search engine</option>
+                                <option value="Referral">Referral</option>
+                            </select>
+                        </div>
+                        <div class="clear"></div>
+                        <input type="hidden" name="type" value="1">
+                        <input class="submit" id="submitForm1" type="submit" value="Send" data-val-en="Send" data-val-zh="发送" onclick="track(6)">
+                    </div>
+                </form>
+                <!-- Media Partner Form -->
+                <form id="form_do_2" name="form_do_2" method="post" novalidate>
+                    <input type="hidden" name="tag_id" value="413">
+                    <div class="pic"><img alt="Media partner" src="./About-Yeahmobi_files/413_448_667_0.jpeg"></div>
+                    <div class="form_box">
+                        <div class="input_box"><p data-en="* Full name" data-zh="* 姓名">* Full name</p><input type="text" name="name" autocomplete="off" placeholder="Please enter" data-ph-en="Please enter" data-ph-zh="请输入" required></div>
+                        <div class="input_box">
+                            <p data-en="* Country" data-zh="* 国家/地区">* Country</p>
+                            <select class="select99" name="text_1" required>
+                                <option value="" data-en="Please select" data-zh="请选择">Please select</option>
+                                <option value="Australia">Australia</option><option value="Brazil">Brazil</option><option value="Canada">Canada</option><option value="China">China</option><option value="France">France</option><option value="Germany">Germany</option><option value="India">India</option><option value="Indonesia">Indonesia</option><option value="Japan">Japan</option><option value="Korea">Korea</option><option value="Malaysia">Malaysia</option><option value="Singapore">Singapore</option><option value="Spain">Spain</option><option value="Thailand">Thailand</option><option value="United Arab Emirates">United Arab Emirates</option><option value="United Kingdom">United Kingdom</option><option value="United States of America">United States of America</option><option value="Vietnam">Vietnam</option>
+                            </select>
+                        </div>
+                        <div class="input_box"><p data-en="Company name" data-zh="公司名称">Company name</p><input type="text" name="text_2" autocomplete="off" placeholder="Please enter" data-ph-en="Please enter" data-ph-zh="请输入"></div>
+                        <div class="input_box">
+                            <p data-en="* Localization channel Type" data-zh="* 本地化渠道类型">* Localization channel Type</p>
+                            <select class="select1" name="text_7" required>
+                                <option value="" data-en="Please select" data-zh="请选择">Please select</option>
+                                <option value="OOH">OOH</option>
+                                <option value="DOOH">DOOH</option>
+                                <option value="TVC">TVC</option>
+                                <option value="Radio">Radio</option>
+                                <option value="Dub &Translate">Dub &amp; Translate</option>
+                                <option value="Offline-Event">Offline-Event</option>
+                                <option value="Live Shooting">Live Shooting</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="input_box"><p data-en="* Email" data-zh="* 邮箱">* Email</p><input type="email" name="email" autocomplete="off" placeholder="Example@yourdomain.com" data-ph-en="Example@yourdomain.com" data-ph-zh="示例@您的域名.com" required></div>
+                        <div class="input_box"><p data-en="* Phone / Wechat ID / Skype" data-zh="* 电话 / 微信 / Skype">* Phone / Wechat ID / Skype</p><input type="text" name="text_4" autocomplete="off" placeholder="Please enter" data-ph-en="Please enter" data-ph-zh="请输入" required></div>
+                        <div class="input_box">
+                            <p data-en="How did you hear about us?" data-zh="您是如何了解我们的？">How did you hear about us?</p>
+                            <select class="select1" name="text_6">
+                                <option value="" data-en="Please select" data-zh="请选择">Please select</option>
+                                <option value="Social Media">Social Media</option>
+                                <option value="Search engine">Search engine</option>
+                                <option value="Referral">Referral</option>
+                            </select>
+                        </div>
+                        <div class="clear"></div>
+                        <input type="hidden" name="type" value="1">
+                        <input class="submit" id="submitForm2" type="submit" value="Send" data-val-en="Send" data-val-zh="发送" onclick="track(7)">
+                    </div>
+                </form>
+                <!-- Influencer Form -->
+                <form id="form_do_3" name="form_do_3" method="post" novalidate>
+                    <input type="hidden" name="tag_id" value="412">
+                    <div class="pic"><img alt="Influencer" src="./About-Yeahmobi_files/412_448_667_0.jpeg"></div>
+                    <div class="form_box">
+                        <div class="input_box"><p data-en="* Full name" data-zh="* 姓名">* Full name</p><input type="text" name="name" autocomplete="off" placeholder="Please enter" data-ph-en="Please enter" data-ph-zh="请输入" required></div>
+                        <div class="input_box">
+                            <p data-en="* Country" data-zh="* 国家/地区">* Country</p>
+                            <select class="select99" name="text_1" required>
+                                <option value="" data-en="Please select" data-zh="请选择">Please select</option>
+                                <option value="Australia">Australia</option><option value="Brazil">Brazil</option><option value="Canada">Canada</option><option value="France">France</option><option value="Germany">Germany</option><option value="India">India</option><option value="Indonesia">Indonesia</option><option value="Japan">Japan</option><option value="Korea">Korea</option><option value="Malaysia">Malaysia</option><option value="Singapore">Singapore</option><option value="Thailand">Thailand</option><option value="United Arab Emirates">United Arab Emirates</option><option value="United Kingdom">United Kingdom</option><option value="United States of America">United States of America</option>
+                            </select>
+                        </div>
+                        <div class="input_box"><p data-en="* Main channel URL" data-zh="* 主要频道 URL">* Main channel URL</p><input type="text" name="text_9" autocomplete="off" placeholder="https://" data-ph-en="https://" data-ph-zh="https://" required></div>
+                        <div class="input_box">
+                            <p data-en="* Channel Type" data-zh="* 频道类型">* Channel Type</p>
+                            <select class="select1" name="text_10" required>
+                                <option value="" data-en="Please select" data-zh="请选择">Please select</option>
+                                <option value="Beauty">Beauty</option>
+                                <option value="Fashion">Fashion</option>
+                                <option value="Electronics">Electronics</option>
+                                <option value="Entertainment">Entertainment</option>
+                                <option value="Games">Games</option>
+                                <option value="Lifestyle">Lifestyle</option>
+                                <option value="Finance">Finance</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </div>
+                        <div class="input_box"><p data-en="* Email" data-zh="* 邮箱">* Email</p><input type="email" name="email" autocomplete="off" placeholder="Example@yourdomain.com" data-ph-en="Example@yourdomain.com" data-ph-zh="示例@您的域名.com" required></div>
+                        <div class="input_box">
+                            <p data-en="* Platform" data-zh="* 平台">* Platform</p>
+                            <select class="select1" name="text_11" required>
+                                <option value="" data-en="Please select" data-zh="请选择">Please select</option>
+                                <option value="YouTube">YouTube</option>
+                                <option value="Instagram">Instagram</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="Tik Tok">TikTok</option>
+                                <option value="Twitch">Twitch</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </div>
+                        <div class="input_box"><p data-en="* Followers" data-zh="* 粉丝数量">* Followers</p><input type="number" name="text_13" autocomplete="off" placeholder="Please enter" data-ph-en="Please enter" data-ph-zh="请输入" required></div>
+                        <div class="input_box">
+                            <p data-en="* Expected cooperation form" data-zh="* 预期合作形式">* Expected cooperation form</p>
+                            <select class="select select_2" name="text_12[]" multiple required>
+                                <option value="Dedicated video" data-en="Dedicated video" data-zh="专属视频">Dedicated video</option>
+                                <option value="Integrated video" data-en="Integrated video" data-zh="融入式视频">Integrated video</option>
+                                <option value="Post" data-en="Post" data-zh="帖子">Post</option>
+                                <option value="Reel" data-en="Reel" data-zh="短视频">Reel</option>
+                                <option value="Livestream" data-en="Livestream" data-zh="直播">Livestream</option>
+                            </select>
+                        </div>
+                        <div class="input_box"><p data-en="* Expected budget" data-zh="* 预计预算">* Expected budget</p><input type="text" name="text_14" autocomplete="off" placeholder="Please enter" data-ph-en="Please enter" data-ph-zh="请输入" required></div>
+                        <div class="clear"></div>
+                        <input type="hidden" name="type" value="1">
+                        <input class="submit" id="submitForm3" type="submit" value="Send" data-val-en="Send" data-val-zh="发送" onclick="track(8)">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Scrolling marquee in popup -->
+    <div class="picMarquee-left">
+        <div class="bd">
+            <ul>
+                <li>let's talk! &nbsp;</li>
+                <li>let's talk! &nbsp;</li>
+                <li>let's talk! &nbsp;</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="./About-Yeahmobi_files/thinkingdata.umd.js"></script>
+<script src="./About-Yeahmobi_files/jquery.SuperSlide.2.1.3.js"></script>
+<script src="./About-Yeahmobi_files/common.js"></script>
+
+
+
+<!-- ===== About Banner ===== -->
+<div class="about_banner rellax" data-rellax-speed="-3">
+    <div class="quan1"></div>
+    <div class="quan2"></div>
+    <div class="center">
+        <div class="about_banner_box">
+            <div class="about_l">
+                <h3 class="wow rotateInUpLeft" data-en="Your global partner for integrated digital marketing and performance advertising." data-zh="您的全球整合数字营销与绩效广告专属伙伴。">Your global partner for integrated digital marketing and performance advertising.</h3>
+                <p class="wow rotateInUpLeft on-opacity" data-wow-delay=".5s" data-en="GlobAd helps brands reach the right audiences worldwide through data-driven media strategies and cross-platform campaigns." data-zh="GlobAd 通过数据驱动的媒体策略和跨平台推广，助力品牌触达全球目标受众。">GlobAd helps brands reach the right audiences worldwide through data-driven media strategies and cross-platform campaigns.</p>
+            </div>
+            <div class="about_r">
+                <div class="viedo_box">
+                    <div class="over_video">
+                        <video id="video" muted loop poster="/Uploads/block/20230421/644232117bcd4.jpg" src="/Uploads/block/20230426/6448d925b1932.mp4"></video>
+                    </div>
+                    <div class="tp_box">
+                        <img class="suiji" src="./About-Yeahmobi_files/365_384_200_0.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== We Have / We Can Provide ===== -->
+<div class="about_pl2">
+    <div class="center">
+        <div class="pl2_box">
+            <div class="pl2_box_t">
+                <h2 class="wow rotateInUpLeft on-opacity" data-en="/ WE HAVE：" data-zh="/ 我们的优势：">/ WE HAVE：</h2>
+                <h3 class="wow rotateInUpLeft on-opacity" data-en="- Regional Market Expertise." data-zh="- 深厚的区域市场专业知识。"><span>-</span> Regional Market Expertise.</h3>
+                <h3 class="wow rotateInUpLeft on-opacity" data-en="- Performance-Driven Advertising Technology." data-zh="- 以效果为导向的广告技术。"><span>-</span> Performance-Driven Advertising Technology.</h3>
+                <h3 class="wow rotateInUpLeft on-opacity" data-en="- Full-Funnel Campaign Management." data-zh="- 全漏斗营销活动管理。"><span>-</span> Full-Funnel Campaign Management.</h3>
+                <p class="wow rotateInUpLeft on-opacity" data-en="Backed by deep regional insights and an intelligent ad platform, we craft strategies that deliver measurable results." data-zh="凭借深度的区域市场洞察与智能广告平台，我们为您制定可量化的营销策略。">Backed by deep regional insights and an intelligent ad platform, we craft strategies that deliver measurable results.</p>
+            </div>
+            <div class="pl2_box_t pl2_box_b">
+                <h2 class="wow rotateInUpLeft on-opacity" data-en="/ WE CAN PROVIDE：" data-zh="/ 我们能提供：">/ WE CAN PROVIDE：</h2>
+                <h3 class="wow rotateInUpLeft on-opacity" data-en="- Wider Reach Across Key Markets." data-zh="- 覆盖更广泛的核心市场。"><span>-</span> Wider Reach Across Key Markets.</h3>
+                <h3 class="wow rotateInUpLeft on-opacity" data-en="- More Targeted and Cost-Efficient Campaigns." data-zh="- 更精准、更高效益的营销推广。"><span>-</span> More Targeted and Cost-Efficient Campaigns.</h3>
+                <h3 class="wow rotateInUpLeft on-opacity" data-en="- Higher Return on Your Advertising Investment." data-zh="- 更高的广告投资回报率。"><span>-</span> Higher Return on Your Advertising Investment.</h3>
+                <p class="wow rotateInUpLeft on-opacity" data-en="We help brands achieve sustainable growth through campaigns that scale efficiently across platforms and regions." data-zh="我们助力品牌通过跨平台、跨地区的高效推广实现持续增长。">We help brands achieve sustainable growth through campaigns that scale efficiently across platforms and regions.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== Meet Our Friends ===== -->
+<div class="about_pl3">
+    <div class="center">
+        <div class="pl3_box">
+            <div class="pl3_box_t">
+                <div class="pl3_box_t_l">
+                    <h3 class="wow rotateInUpLeft" data-en="OUR STRENGTH" data-zh="我们的实力">OUR STRENGTH</h3>
+                </div>
+                <div class="pl3_box_t_r wow rotateInUpLeft">
+                    <p class="on-opacity" data-en="We have helped more than 1,000 enterprises reach overseas users efficiently, and applied our complete going-global service system to fulfill the differentiated needs of advertisers across ecommerce platforms including Amazon, SHEIN, Alibaba, Tencent, Lazada, Facebook, TikTok, and more." data-zh="我们已协助逾1,000家企业高效触达海外用户，并通过完善的出海服务体系，满足在亚马逊、SHEIN、阿里巴巴、腾讯、来赞达、Facebook、TikTok等电商平台上不同类型广告主的差异化需求。">We have helped more than 1,000 enterprises reach overseas users efficiently, and applied our complete going-global service system to fulfill the differentiated needs of advertisers across ecommerce platforms including Amazon, SHEIN, Alibaba, Tencent, Lazada, Facebook, TikTok, and more.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pl3_box_b swiper wow fadeInUpBig" id="mySwiper2">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide"><a href="javascript:void(0);"><img src="./About-Yeahmobi_files/82_282_114_0.png" alt="Partner 1"></a></li>
+            <li class="swiper-slide"><a href="javascript:void(0);"><img src="./About-Yeahmobi_files/83_282_114_0.png" alt="Partner 2"></a></li>
+            <li class="swiper-slide"><a href="javascript:void(0);"><img src="./About-Yeahmobi_files/84_282_114_0.png" alt="Partner 3"></a></li>
+            <li class="swiper-slide"><a href="javascript:void(0);"><img src="./About-Yeahmobi_files/85_282_114_0.png" alt="Partner 4"></a></li>
+            <li class="swiper-slide"><a href="javascript:void(0);"><img src="./About-Yeahmobi_files/86_282_114_0.png" alt="Partner 5"></a></li>
+            <li class="swiper-slide"><a href="javascript:void(0);"><img src="./About-Yeahmobi_files/87_282_114_0.png" alt="Partner 6"></a></li>
+            <li class="swiper-slide"><a href="javascript:void(0);"><img src="./About-Yeahmobi_files/88_282_114_0.png" alt="Partner 7"></a></li>
+            <li class="swiper-slide"><a href="javascript:void(0);"><img src="./About-Yeahmobi_files/89_282_114_0.png" alt="Partner 8"></a></li>
+            <li class="swiper-slide"><a href="javascript:void(0);"><img src="./About-Yeahmobi_files/102_282_114_0.png" alt="Partner 9"></a></li>
+            <li class="swiper-slide"><a href="javascript:void(0);"><img src="./About-Yeahmobi_files/91_282_114_0.png" alt="Partner 10"></a></li>
+            <li class="swiper-slide"><a href="javascript:void(0);"><img src="./About-Yeahmobi_files/92_282_114_0.png" alt="Partner 11"></a></li>
+            <li class="swiper-slide"><a href="javascript:void(0);"><img src="./About-Yeahmobi_files/93_282_114_0.png" alt="Partner 12"></a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- ===== Stats ===== -->
+<div class="about_pl4">
+    <div class="center">
+        <div class="pl4_box">
+            <ul>
+                <li>
+                    <h3 class="wow rotateInUpLeft">1,000+</h3>
+                    <p class="wow rotateInUpLeft on-opacity" data-en="Enterprise Partners" data-zh="企业合作伙伴">Enterprise Partners</p>
+                </li>
+                <li>
+                    <h3 class="wow rotateInUpLeft">30+</h3>
+                    <p class="wow rotateInUpLeft on-opacity" data-en="Coverage Markets" data-zh="覆盖市场">Coverage Markets</p>
+                </li>
+                <li>
+                    <h3 class="wow rotateInUpLeft">4</h3>
+                    <p class="wow rotateInUpLeft on-opacity" data-en="Core Marketing Services" data-zh="核心营销服务">Core Marketing Services</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- ===== Locations ===== -->
+<div class="about_pl5">
+    <div class="quan1"></div>
+    <div class="quan2"></div>
+    <div class="center">
+        <div class="pl5_box">
+            <div class="pl5_box_tw">
+                <div class="tw_l">
+                    <p class="wow rotateInUpLeft" data-en="We grow stronger when we connect and collaborate across borders and time zones." data-zh="跨越国界与时区，连结合作，共同成长。">We grow stronger when we connect and collaborate across borders and time zones.</p>
+                    <h3 class="wow rotateInUpLeft" data-en="LOCATIONS" data-zh="办公地点">LOCATIONS</h3>
+                    <ul>
+                        <li data-jl="1" class="h1 txt_1 wow rotateInUpLeft on-opacity" data-letters="| Malaysia" data-en="| Malaysia" data-zh="| 马来西亚">| Malaysia</li>
+                        <li data-jl="2" class="h2 txt_2 wow rotateInUpLeft on-opacity" data-letters="| Singapore" data-en="| Singapore" data-zh="| 新加坡">| Singapore</li>
+                        <li data-jl="3" class="h3 txt_3 wow rotateInUpLeft on-opacity" data-letters="| China" data-en="| China" data-zh="| 中国">| China</li>
+                    </ul>
+                </div>
+                <div class="tw_r">
+                    <div id="pictures">
+                        <div class="pic-wrap tu1" data-id="1" style="z-index:10;top:50%;left:50%;">
+                            <img src="./malaysia.jpeg" alt="Malaysia">
+                            <span class="pic-label">Malaysia</span>
+                        </div>
+                        <div class="pic-wrap tu2" data-id="2" style="z-index:1;top:50%;left:50%;">
+                            <img src="./About-Yeahmobi_files/47_531_605_0.jpeg" alt="Singapore">
+                        </div>
+                        <div class="pic-wrap tu3" data-id="3" style="z-index:2;top:50%;left:50%;">
+                            <img src="./About-Yeahmobi_files/55_531_605_0.jpeg" alt="China">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== Growth Road ===== -->
+<div class="about_pl6">
+    <div class="center">
+        <div class="pl6_box">
+            <div class="pl6_box_l">
+                <p class="wow rotateInUpLeft on-opacity" data-en="Exploring beyond the horizon." data-zh="探索更远的地平线。">Exploring beyond the horizon.</p>
+                <h3 class="wow rotateInUpLeft" data-en="Road to Success" data-zh="成功之路">Road to Success</h3>
+            </div>
+            <div class="pl6_box_r">
+                <div class="r_left prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg></div>
+                <div class="r_right next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+            </div>
+        </div>
+        <div class="pl6_lun swiper" id="mySwiper3">
+            <ul class="swiper-wrapper on-drag">
+                <li class="swiper-slide" data-key="2025"><div class="road_box"><p data-en="Expanded cross-platform partnerships with TikTok, Facebook, Amazon, and Lazada" data-zh="深化与TikTok、Facebook、亚马逊、来赞达等平台的跨平台合作">Expanded cross-platform partnerships with TikTok, Facebook, Amazon, and Lazada</p><p data-en="Grew active enterprise client base to over 1,000 partners across Southeast Asia and beyond" data-zh="企业客户规模突破1,000家，覆盖东南亚及更广泛市场">Grew active enterprise client base to over 1,000 partners across Southeast Asia and beyond</p><p data-en="Launched enhanced programmatic advertising capabilities" data-zh="推出升级版程序化广告能力">Launched enhanced programmatic advertising capabilities</p></div><h2>2025</h2></li>
+                <li class="swiper-slide" data-key="2024"><div class="road_box"><p data-en="Strengthened influencer marketing division across key ASEAN markets" data-zh="强化东南亚核心市场的网红营销业务">Strengthened influencer marketing division across key ASEAN markets</p><p data-en="Deepened ecommerce advertising services on SHEIN, Alibaba, and Tencent platforms" data-zh="深化在SHEIN、阿里巴巴、腾讯平台上的电商广告服务">Deepened ecommerce advertising services on SHEIN, Alibaba, and Tencent platforms</p><p data-en="Expanded regional operations and campaign delivery teams" data-zh="扩展区域运营与营销推广团队">Expanded regional operations and campaign delivery teams</p></div><h2>2024</h2></li>
+                <li class="swiper-slide" data-key="2023"><div class="road_box"><p data-en="GlobAd established with headquarters in Kuala Lumpur, Malaysia" data-zh="GlobAd于马来西亚吉隆坡正式成立">GlobAd established with headquarters in Kuala Lumpur, Malaysia</p><p data-en="Opened regional offices in Singapore and China" data-zh="在新加坡与中国开设区域办事处">Opened regional offices in Singapore and China</p><p data-en="Launched integrated digital marketing services for brands going global" data-zh="推出面向出海品牌的整合数字营销服务">Launched integrated digital marketing services for brands going global</p></div><h2>2023</h2></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- ===== Let's Talk Banner ===== -->
+<div class="letstalk on-letstalk wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" onclick="track(2)">
+    <div class="a">
+        <div class="ab">
+            <ul id="marquee_1">
+                <li>你好</li><li>Hello</li><li>안녕하세요</li><li>こんにちは</li>
+                <li>Bonjour</li><li>Halo</li><li>नमस्ते</li><li>مرحبًا</li>
+                <li>Привет</li><li>Hola</li><li>Hallo</li>
+            </ul>
+            <ul id="marquee_2">
+                <li>你好</li><li>Hello</li><li>안녕하세요</li><li>こんにちは</li>
+                <li>Bonjour</li><li>Halo</li><li>नमस्ते</li><li>مرحبًا</li>
+                <li>Привет</li><li>Hola</li><li>Hallo</li>
+            </ul>
+        </div>
+    </div>
+    <div class="youwill">
+        <ul>
+            <li data-en="Join us on an inspiring growth journey." data-zh="与我们一起，开启精彩的增长之旅。">Join us on an inspiring growth journey.</li>
+            <li data-en="Join us on an inspiring growth journey." data-zh="与我们一起，开启精彩的增长之旅。">Join us on an inspiring growth journey.</li>
+            <li data-en="Join us on an inspiring growth journey." data-zh="与我们一起，开启精彩的增长之旅。">Join us on an inspiring growth journey.</li>
+            <li data-en="Join us on an inspiring growth journey." data-zh="与我们一起，开启精彩的增长之旅。">Join us on an inspiring growth journey.</li>
+            <li data-en="Join us on an inspiring growth journey." data-zh="与我们一起，开启精彩的增长之旅。">Join us on an inspiring growth journey.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- ===== Footer ===== -->
+<div class="footer on-opacity">
+    <div class="center">
+        <div class="footer_left">
+            <h2 data-en="Give us a warm hello!" data-zh="联系我们">Give us a warm hello!</h2>
+            <a href="https://www.linkedin.com/company/yeahmobi/" target="_blank" class="pic">
+                <img alt="Linkedin" src="./About-Yeahmobi_files/6446326e65610.png">
+            </a>
+            <div class="wx">
+                <div class="wxico"><img alt="" src="./About-Yeahmobi_files/645615dd417cb.png"></div>
+                <div class="wx_pop">
+                    <img alt="" src="./About-Yeahmobi_files/64561ee65eea0.jpg">
+                    <p>Wechat scan code to follow us</p>
+                </div>
+            </div>
+            <div class="wap_wxpop">
+                <div class="box">
+                    <div class="back">BACK</div>
+                    <img alt="" src="./About-Yeahmobi_files/64561ee65eea0.jpg">
+                    <p>Long press to identify the QR code to follow our WeChat public account.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer_right">
+            <div class="fo_list1">
+                <p data-en="SITEMAP" data-zh="网站地图">SITEMAP</p>
+                <ul>
+                    <li><a href="/" data-en="About" data-zh="关于我们">About</a></li>
+                    <li><a href="service-local-media.html" data-en="Services" data-zh="服务">Services</a></li>
+                </ul>
+            </div>
+            <div class="fo_list2">
+                <p data-en="OFFICES" data-zh="办公地点">OFFICES</p>
+                <ul>
+                    <li data-en="Malaysia" data-zh="马来西亚">Malaysia</li>
+                    <li data-en="Singapore" data-zh="新加坡">Singapore</li>
+                    <li data-en="China" data-zh="中国">China</li>
+                </ul>
+            </div>
+            <div class="fo_list3">
+                <ul>
+                    <p data-en="NEW BUSINESS" data-zh="业务合作">NEW BUSINESS</p>
+                    <li><a href="mailto:Admin@globad.net">Admin@globad.net</a></li>
+                </ul>
+                <ul>
+                    <p data-en="MALAYSIA HQ" data-zh="马来西亚总部">MALAYSIA HQ</p>
+                    <li>Unit 10-02, Vida Bukit Ceylon</li>
+                    <li>No. 1D, Jalan Ceylon</li>
+                    <li>50200 Kuala Lumpur</li>
+                    <li>W.P. Kuala Lumpur, Malaysia</li>
+                </ul>
+                <ul>
+                    <p data-en="SERVICES" data-zh="服务项目">SERVICES</p>
+                    <li><a href="service-local-media.html" data-en="Local Media Marketing" data-zh="本地媒体营销">Local Media Marketing</a></li>
+                    <li><a href="service-influencer.html" data-en="Influencer Marketing" data-zh="网红营销">Influencer Marketing</a></li>
+                    <li><a href="service-programmatic.html" data-en="Programmatic Advertising" data-zh="程序化广告">Programmatic Advertising</a></li>
+                    <li><a href="service-integrate.html" data-en="Integrate Marketing" data-zh="整合营销">Integrate Marketing</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="ban">
+            <div class="left">
+                <!-- Update company name -->
+                <p>GlobAd Sdn Bhd</p>
+                <a href="privacy.html" data-en="Privacy" data-zh="隐私政策">Privacy</a>
+            </div>
+            <div class="gotop">back to top</div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== Tawk.to Live Chat Widget ===== -->
+<!-- Replace the property ID and widget ID below with your own from tawk.to -->
+<script type="text/javascript">
+var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+(function(){
+    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/69fc6f943ff7421c399e7bc1/1jo117n4h';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1, s0);
+})();
+</script>
+
+<!-- ===== External JS ===== -->
+<script src="./About-Yeahmobi_files/tweenmax.min.js"></script>
+<script src="./About-Yeahmobi_files/index.js"></script>
+<script src="./About-Yeahmobi_files/lazyload.js"></script>
+<script src="./About-Yeahmobi_files/global.js"></script>
+<script src="script.js"></script>
+
+<!-- ===== About Page: Swiper + Animations ===== -->
+<script>
+$(function () {
+    var _width = $(window).width();
+    if (_width > 1024) {
+        var videoEl = document.getElementById("video");
+        if (videoEl) videoEl.play();
+        new Rellax('.rellax');
+        new Swiper('#mySwiper2', {
+            slidesPerView: 4,
+            slidesPerColumn: 3,
+            slidesPerColumnFill: "column",
+            speed: 1000,
+            autoplay: { delay: 1000, stopOnLastSlide: false, disableOnInteraction: true },
+            on: { touchMove: function(swiper, e) { $('.follower').css({ left: swiper.clientX, top: swiper.clientY }).show(); } }
+        });
+    } else {
+        $(".quan1, .quan2").css("display", "none");
+        new Swiper('#mySwiper2', {
+            slidesPerView: 2,
+            slidesPerColumn: 6,
+            slidesPerColumnFill: "column",
+            speed: 1000,
+            autoplay: { delay: 1000, stopOnLastSlide: false, disableOnInteraction: true }
+        });
+    }
+});
+
+new Swiper("#mySwiper3", {
+    spaceBetween: 0,
+    slidesPerView: "auto",
+    navigation: { nextEl: ".next", prevEl: ".prev" },
+    on: { touchMove: function(swiper, e) { $('.follower').css({ left: swiper.clientX, top: swiper.clientY }).show(); } }
+});
+
+if (/Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent)) {
+    $(".quan1, .quan2").css("display", "none");
+}
+
+// Location photo z-index cycling animation
+$(document).ready(function () {
+    var z = 0, inAnimation = false;
+    $('#pictures .pic-wrap').each(function () { z++; $(this).css('z-index', z); });
+
+    function swapFirstLast() {
+        if (inAnimation) return;
+        inAnimation = true;
+        var top = z, bot = 1;
+        $('#pictures .pic-wrap').each(function () {
+            var cur = parseInt($(this).css('z-index'));
+            if (cur === top) {
+                $(this).animate({}, 'slow', function () {
+                    $(this).css('z-index', bot).animate({ 'left': '50%' }, 'slow', function () { inAnimation = false; });
+                });
+            } else {
+                $(this).animate({ 'top': '50%' }, 'slow', function () {
+                    $(this).css('z-index', cur + 1);
+                });
+            }
+        });
+    }
+
+    var ding = setInterval(swapFirstLast, 1000);
+    $(".tw_r").mouseover(function () { clearInterval(ding); });
+    $(".tw_r").mouseout(function () { ding = setInterval(swapFirstLast, 1000); });
+
+    // Group location list items into sub-lists
+    var _len = 5;
+    $(".tw_l > ul > li").each(function (i) {
+        $(".tw_l > ul > li").slice(i * _len, i * _len + _len).wrapAll("<ul></ul>");
+    });
+
+    // Random hero image
+    var imgList = [
+        "./About-Yeahmobi_files/365_384_200_0.jpeg",
+        "./About-Yeahmobi_files/365_384_200_0.jpeg",
+        "./About-Yeahmobi_files/365_384_200_0.jpeg"
+    ];
+    $(".suiji").attr("src", imgList[Math.floor(Math.random() * imgList.length)]);
+});
+
+// Init select2 on all selects inside popup
+$(function () {
+    if ($.fn.select2) {
+        $('.talk_pop select').select2({ width: 'auto' });
+    }
+});
+</script>
+
+</body>
+</html>
+
+
+

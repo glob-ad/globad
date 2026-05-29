@@ -1,0 +1,687 @@
+/* ===== Fonts: Outfit (body) + Playfair Display (headings) — replaces Yeahmobi's Montserrat/Gloock ===== */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+/* Override vendor font aliases so all Montserrat usage becomes Outfit */
+@font-face { font-family: 'mm'; src: local('Outfit'); font-weight: 400; }
+@font-face { font-family: 'ms'; src: local('Outfit'); font-weight: 600; }
+@font-face { font-family: 'me'; src: local('Outfit'); font-weight: 800; }
+@font-face { font-family: 'mi'; src: local('Outfit'); font-style: italic; }
+@font-face { font-family: 'ps'; src: local('Outfit'); font-weight: 600; }
+@font-face { font-family: 'tr'; src: local('Playfair Display'); font-weight: 400; }
+@font-face { font-family: 'gr'; src: local('Playfair Display'); font-weight: 400; }
+
+/* Broad font override ensuring Outfit as the default everywhere */
+body, input, select, textarea, button {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+/* Headings use Playfair Display */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif !important;
+}
+
+/* ===== Restore cursor hidden by vendor CSS (cursor: none !important on *) ===== */
+* { cursor: auto !important; }
+a, button, [onclick], label, input, select, textarea, summary { cursor: pointer !important; }
+
+/* ===== Logo Size ===== */
+.header .logo img,
+.wap_header .logo img,
+.wap_menulist .logo img {
+    max-height: 52px;
+    width: auto;
+}
+
+/* ===== Logo vertical position: shift up slightly ===== */
+.header .logo {
+    top: 30% !important;
+}
+
+/* ===== Shared Header / Nav Styles ===== */
+.header {
+    z-index: 99;
+    color: #ffffff;
+    background: none;
+}
+
+/* Nav: bring items together (vendor uses space-between which spreads 2 items to far edges) */
+.header .nav {
+    justify-content: flex-start !important;
+    gap: 0.4rem;
+}
+
+/* Nav: remove italic from active link (vendor sets font-style:italic on li.on > a) */
+.header .nav > li.on > a,
+.header .nav > li a:hover {
+    font-style: normal !important;
+    font-family: inherit !important;
+}
+.fixedNav {
+    background: #090613 !important;
+}
+.header .nav > li > a { color: #ffffff; }
+.header .nav .navon > a {
+    background: url(https://www-source.yeahmobi.com/themes/Iafr/default/img/navon.png) no-repeat right 6px center;
+    background-size: .16rem;
+}
+.header .nav > li a::after { background: #fff; }
+.header .navright a { color: #ffffff; }
+.header .nav > li > a { color: #fff; }
+.header .nav > li > a::after { background: #fff; }
+.header .nav .nav_list::after { background: #fff; }
+.header .nav > li a { color: #fff; }
+.header .nav > li { color: #fff; }
+.header .navright .talk {
+    box-sizing: border-box;
+    padding-left: 0.32rem;
+    background: url(https://www-source.yeahmobi.com/themes/Iafr/default/img/talk2.png) no-repeat left center;
+    background-size: .24rem;
+}
+.header .nav .nav_list li:hover a:after { background: #fff; }
+.header .nav .nav_list { background: #090613; }
+
+/* ===== Mobile Header ===== */
+.wap_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+.wap_header .logo .logo1 { display: none; }
+.wap_header .logo .logo2 { display: block; }
+.wap_header .lin { color: #fff; }
+.wap_header .menu { color: #fff; }
+
+@media screen and (max-width: 768px) {
+    .wap_header { background: none; }
+    .wap_header .center { background: none; }
+}
+
+
+/* ===== Partner Logos Grid Centering ===== */
+.about_pl3 .pl3_box_b {
+    float: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* ===== Stats: single centred column at all sizes ===== */
+.about_pl4 .pl4_box ul {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    flex-wrap: nowrap !important;
+}
+.about_pl4 .pl4_box ul li {
+    width: 100% !important;
+    text-align: center;
+    margin-top: 0.56rem !important;
+}
+.about_pl4 .pl4_box ul li:first-child {
+    margin-top: 0 !important;
+}
+
+/* ===== Footer: BACK TO TOP on same row as GlobAd Sdn Bhd ===== */
+.footer .center .ban {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+.footer .center .ban .left {
+    float: none !important;
+    padding-top: 0 !important;
+}
+.footer .center .ban .gotop {
+    float: none !important;
+    flex-shrink: 0;
+}
+
+/* ===== Footer OFFICES column ===== */
+.footer .center .footer_right .fo_list2 {
+    align-self: flex-start !important;
+}
+.footer .center .footer_right .fo_list2 ul {
+    float: none !important;
+    margin-left: 0 !important;
+}
+
+/* ===== Mobile Responsive Fixes ===== */
+@media screen and (max-width: 768px) {
+
+    /* Page hero — override inline rem-based styles (Home, Work, News, Services) */
+    main {
+        padding: 60px 20px !important;
+        min-height: 40vh !important;
+    }
+    main h1 {
+        font-size: 26px !important;
+        margin-bottom: 12px !important;
+        line-height: 1.2 !important;
+    }
+    main p {
+        font-size: 14px !important;
+        max-width: 100% !important;
+        line-height: 1.6 !important;
+    }
+
+    /* "Let's Talk" scrolling marquee — reduce from 48px */
+    .letstalk .ab li {
+        font-size: 0.28rem !important;
+    }
+    .letstalk .youwill li {
+        font-size: 0.13rem !important;
+    }
+    .letstalk {
+        padding-top: 0.4rem !important;
+    }
+
+    /* Footer "say hi!" heading */
+    .footer .center h2 {
+        font-size: 0.32rem !important;
+    }
+
+    /* Footer: heading sits directly above its items — no extra gap */
+    .footer .center .footer_right .fo_list1 p,
+    .footer .center .footer_right .fo_list2 p {
+        margin: 0 !important;
+        padding: 0 !important;
+        line-height: 1.4 !important;
+    }
+    .footer .center .footer_right .fo_list1 ul,
+    .footer .center .footer_right .fo_list2 ul {
+        margin-top: 0.08rem !important;
+        padding-top: 0 !important;
+    }
+    .footer .center .footer_right .fo_list1 ul li:first-child,
+    .footer .center .footer_right .fo_list2 ul li:first-child {
+        margin-top: 0 !important;
+    }
+
+    /* Mobile header — dark bg so white text is visible */
+    .wap_header {
+        background: rgba(9,6,19,0.92) !important;
+    }
+    .wap_header .center {
+        background: none !important;
+    }
+
+    /* Privacy page */
+    .privacy-wrap {
+        padding: 80px 16px 60px;
+        font-size: 15px;
+    }
+    .privacy-wrap h1 {
+        font-size: 28px;
+    }
+    .privacy-wrap h2 {
+        font-size: 18px;
+    }
+
+    /* Footer — stack columns */
+    .footer .center .footer_right {
+        flex-wrap: wrap;
+    }
+    /* Footer — SITEMAP takes full row so OFFICES wraps below it */
+    .footer .center .footer_right .fo_list1,
+    .footer .center .footer_right .fo_list2 {
+        width: 100% !important;
+    }
+    /* Footer — spacing above OFFICES and the block that follows */
+    .footer .center .footer_right .fo_list2 {
+        margin-top: 0.4rem !important;
+    }
+    .footer .center .footer_right .fo_list3 {
+        margin-top: 0.4rem !important;
+    }
+}
+
+/* ===== Mobile menu marquee: below News, centred ===== */
+.wap_menulist .picMarquee-left {
+    position: relative !important;
+    bottom: auto !important;
+    left: 0 !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    margin-top: 32px;
+}
+.wap_menulist .picMarquee-left::before,
+.wap_menulist .picMarquee-left::after {
+    display: none !important;
+}
+.picMarquee-left .bd ul li {
+    white-space: nowrap !important;
+}
+
+/* ===== Fix: location list items must not word-wrap ===== */
+.about_pl5 .tw_l li {
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+    .about_pl5 .pl5_box .pl5_box_tw .tw_l {
+        overflow: visible !important;
+    }
+    .about_pl5 .pl5_box .pl5_box_tw .tw_l ul {
+        margin-right: 4px !important;
+    }
+    .about_pl5 .pl5_box .pl5_box_tw .tw_l ul li {
+        font-size: 16px !important;
+    }
+    .about_pl5 .pl5_box .pl5_box_tw .tw_r {
+        display: none !important;
+    }
+}
+
+/* ===== Fix: glow orbs block clicks on banner content ===== */
+.about_banner .quan1,
+.about_banner .quan2 {
+    pointer-events: none;
+}
+
+/* ===== Remove dark gradient shadow behind banner text ===== */
+.about_banner .about_banner_box .about_r .viedo_box .over_video::before {
+    display: none;
+}
+
+/* ===== Home Page Hero ===== */
+.home_hero {
+    padding: 120px 0 80px;
+    max-width: 700px;
+}
+.home_hero h1 {
+    font-size: 64px !important;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.1 !important;
+    margin-bottom: 24px !important;
+}
+.home_hero > p {
+    font-size: 18px !important;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 40px !important;
+    line-height: 1.6 !important;
+    max-width: 560px;
+}
+.hero_btns {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.hero_btns .btn_outline {
+    display: inline-block;
+    padding: 14px 32px;
+    border: 1px solid rgba(255,255,255,0.6);
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.hero_btns .btn_outline:hover { background: rgba(255,255,255,0.1); }
+.hero_btns .btn_solid {
+    display: inline-block;
+    padding: 14px 32px;
+    background: #fff;
+    color: #090613;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.hero_btns .btn_solid:hover { background: rgba(255,255,255,0.85); }
+
+/* ===== Home Services Grid ===== */
+.home_services {
+    padding: 80px 0;
+    background: #fff;
+}
+.home_services > .center > h2 {
+    font-size: 14px !important;
+    letter-spacing: 2px;
+    color: #090613;
+    margin-bottom: 48px;
+}
+.services_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid #e0e0e0;
+}
+.service_card {
+    display: block;
+    padding: 40px 32px;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    text-decoration: none;
+    color: #090613;
+    transition: background 0.3s;
+}
+.service_card:last-child { border-right: none; }
+.service_card:hover { background: #090613; }
+.service_card:hover .svc_num,
+.service_card:hover h3,
+.service_card:hover .svc_arrow { color: #fff; }
+.service_card:hover p { color: rgba(255,255,255,0.65); }
+.svc_num {
+    font-size: 48px;
+    font-weight: 700;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    line-height: 1;
+    transition: color 0.3s;
+}
+.service_card h3 {
+    font-size: 18px !important;
+    font-weight: 600;
+    margin-bottom: 16px !important;
+    color: #090613;
+    transition: color 0.3s;
+}
+.service_card p {
+    font-size: 14px !important;
+    color: #666;
+    line-height: 1.6 !important;
+    margin-bottom: 24px !important;
+    transition: color 0.3s;
+}
+.svc_arrow {
+    font-size: 20px;
+    color: #090613;
+    transition: color 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    .home_hero { padding: 80px 0 40px; }
+    .home_hero h1 { font-size: 34px !important; }
+    .home_hero > p { font-size: 14px !important; }
+    .services_grid { grid-template-columns: repeat(2, 1fr); }
+    .service_card:nth-child(2n) { border-right: none; }
+    .service_card { padding: 28px 20px; }
+    .svc_num { font-size: 32px; }
+    .service_card h3 { font-size: 15px !important; }
+}
+
+/* ===== Works Page — Case Study Grid ===== */
+.work_list {
+    background: #fff;
+    padding-bottom: 80px;
+}
+.work_list .center > ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.work_list ul li {
+    width: 32%;
+    margin-right: 2%;
+    margin-top: 48px;
+    position: relative;
+    list-style: none;
+}
+.work_list ul li:nth-child(3n) { margin-right: 0; }
+.work_list ul li:nth-child(1),
+.work_list ul li:nth-child(2),
+.work_list ul li:nth-child(3) { margin-top: 0; }
+.work_list ul li .xianzhi {
+    position: relative;
+    overflow: hidden;
+    background: #0d0a1f;
+}
+.work_list ul li:nth-child(2n-1) .xianzhi { padding-top: 68.8%; }
+.work_list ul li:nth-child(2n) .xianzhi {
+    padding-top: 39.1%;
+    margin-top: 29.7%;
+}
+.work_list ul li .xianzhi img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.work_list ul li .xianzhi .work_box {
+    padding: 10px 16px;
+    background: #fff;
+    font-size: 14px;
+    color: #262626;
+    line-height: 1.5;
+    font-weight: 600;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    z-index: 2;
+    letter-spacing: 1px;
+}
+.work_list ul li:hover .xianzhi img { transform: scale(1.1); }
+
+@media screen and (max-width: 768px) {
+    .work_list ul li {
+        width: 48%;
+        margin-right: 4% !important;
+        margin-top: 20px !important;
+    }
+    .work_list ul li:nth-child(2n) { margin-right: 0 !important; }
+    .work_list ul li:nth-child(1),
+    .work_list ul li:nth-child(2) { margin-top: 0 !important; }
+    .work_list ul li .xianzhi {
+        padding-top: 65% !important;
+        margin-top: 0 !important;
+    }
+}
+
+/* ===== Email Choice Popup (desktop) ===== */
+.email-choice-popup {
+    position: fixed;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+    z-index: 999999;
+    min-width: 210px;
+    display: none;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.email-choice-popup p {
+    font-size: 11px;
+    color: #999;
+    padding: 10px 18px 6px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.email-choice-popup a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 18px;
+    color: #262626;
+    text-decoration: none;
+    font-size: 14px;
+    border-bottom: 1px solid #f5f5f5;
+    transition: background 0.15s;
+}
+.email-choice-popup a:last-child { border-bottom: none; }
+.email-choice-popup a:hover { background: #f7f7f7; }
+.email-choice-popup a span.badge {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+    flex-shrink: 0;
+}
+.badge-gmail  { background: #EA4335; }
+.badge-outlook { background: #0078D4; }
+
+/* ===== Language Toggle Button ===== */
+#lang-toggle {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #090613;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    margin-left: 18px;
+    align-self: center;
+    letter-spacing: 0.5px;
+    transition: opacity 0.2s;
+    display: inline-block;
+    cursor: pointer !important;
+}
+.fixedNav #lang-toggle {
+    background: #ffffff;
+    color: #090613;
+}
+#lang-toggle:hover { opacity: 0.82; }
+/* Mobile lang button — same square style as desktop, lives in wap_header */
+#lang-toggle-mobile {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #ffffff;
+    color: #090613;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    cursor: pointer !important;
+    flex-shrink: 0;
+}
+/* Wrapper that groups lang button + menu toggle on the right of wap_header */
+.wap_header .wap-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ===== Footer: space between MALAYSIA HQ and SERVICES blocks ===== */
+.footer .center .footer_right .fo_list3 ul:nth-child(3) {
+    margin-top: 0.4rem;
+}
+
+/* ===== Location photo wrappers ===== */
+#pictures .pic-wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    max-width: 100%;
+    transform: translate(-50%, -50%);
+}
+/* Odd wrappers (Malaysia, China) slightly smaller — matches original stacking style */
+#pictures .pic-wrap:nth-child(odd) {
+    max-width: 93%;
+}
+/* Reset positioning on the img — the wrapper handles it */
+#pictures .pic-wrap img {
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto;
+    display: block;
+}
+/* "Malaysia" label — outlined stroke matching Singapore/China baked-in text style */
+#pictures .pic-label {
+    position: absolute;
+    top: 0.14rem;
+    left: 0.14rem;
+    font-size: 0.48rem;
+    font-weight: 400;
+    color: transparent;
+    -webkit-text-stroke: 1.5px #ffffff;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 2px;
+    line-height: 1;
+    pointer-events: none;
+}
+
+/* ===== Locations section: heading + list share the left flex column ===== */
+.about_pl5 .pl5_box .pl5_box_tw {
+    align-items: flex-start !important;
+}
+.about_pl5 .pl5_box .pl5_box_tw .tw_l {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+}
+.about_pl5 .pl5_box .pl5_box_tw .tw_l p,
+.about_pl5 .pl5_box .pl5_box_tw .tw_l h3 {
+    width: 100% !important;
+}
+
+
+/* ===== Timeline nav arrow buttons ===== */
+.about_pl6 .pl6_box .pl6_box_r .r_left,
+.about_pl6 .pl6_box .pl6_box_r .r_right {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-image: none !important;
+}
+.about_pl6 .pl6_box .pl6_box_r .r_left svg,
+.about_pl6 .pl6_box .pl6_box_r .r_right svg {
+    width: 20px;
+    height: 20px;
+    color: #090613;
+    display: block;
+    flex-shrink: 0;
+}
+.about_pl6 .pl6_box .pl6_box_r .prev.swiper-button-disabled,
+.about_pl6 .pl6_box .pl6_box_r .next.swiper-button-disabled {
+    opacity: 0.35;
+}
+
+/* ===== Service Page Hero Animation ===== */
+.char-wrap {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+.char-wrap .char {
+    display: inline-block;
+    transform: translateY(100%);
+    animation: charSlideUp 0.6s ease-out forwards;
+}
+
+@keyframes charSlideUp {
+    0%   { transform: translateY(100%); }
+    100% { transform: translateY(0); }
+}
+
+.hero-sub-fade {
+    opacity: 0;
+    animation: subFadeIn 0.8s ease forwards;
+}
+
+@keyframes subFadeIn {
+    0%   { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 0.6; transform: translateY(0); }
+}
